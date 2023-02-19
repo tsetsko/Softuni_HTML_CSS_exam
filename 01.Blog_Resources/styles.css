@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7e0b5;
+}
+
+.boxes {
+  display: grid;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+  grid-template-areas: repeat (2, 1fr);
+  gap: 20px;
+}
+
+.box,
+.box img {
+  border-radius: 20px;
+  max-width: 400px;
+  min-width: 400px;
+}
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.line p {
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.line {
+  position: absolute;
+  background-color: #67545f;
+  width: 100%;
+  top: 83%;
+  height: 50px;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.menu {
+  max-width: 200px;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 3rem;
+  justify-content: center;
+}
+
+.menu li,
+.menu p {
+  color: #67545f;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu p {
+  margin-bottom: 1.25rem;
+}
+
+.menu li {
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+}
+
+i {
+  margin-right: 10px;
+}

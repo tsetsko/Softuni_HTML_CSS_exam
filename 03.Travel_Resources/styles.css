@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 30px;
+  padding: 8px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+header nav ul li:nth-child(5),
+.hero .content button {
+  background-color: #370511;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: none;
+}
+
+header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hero {
+  display: grid;
+  position: relative;
+  top: -100px;
+  background: url(./images/landing-photo.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  grid-template-areas: "contect .";
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.hero .content {
+  grid-area: contect;
+  padding-left: 30%;
+}
+
+.hero .content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.hero .content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.hero .content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.hero .content button {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.places {
+  text-align: center;
+}
+
+.places h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.places .recc {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* Cards */
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 45%;
+  gap: 30px;
+}
+
+.locations .card {
+  width: 30%;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.locations .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.locations .card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.locations .card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.25;
+  padding: 0 1.5rem;
+  text-align: left;
+}
+
+.locations .card button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 35rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.footer ul li {
+  margin-bottom: 20px;
+}
+
+.footer .footer-logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer .social .social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

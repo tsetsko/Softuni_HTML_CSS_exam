@@ -1,0 +1,93 @@
+@media (max-width: 600px) {
+  .home-left,
+  .home-right,
+  .home-container01 {
+    display: none;
+  }
+
+  .navbar-logo-title {
+    margin-left: 0;
+  }
+
+  .home-main .home-hero,
+  .home-main .home-hero .home-max-width,
+  .home-main .home-hero .home-max-width .home-hero1 {
+    display: block;
+    justify-content: center;
+  }
+
+  .home-main .home-hero .home-max-width .home-hero1 .home-container03,
+  .home-main
+    .home-hero
+    .home-max-width
+    .home-hero1
+    .home-container03
+    .home-info,
+  .home-main
+    .home-hero
+    .home-max-width
+    .home-hero1
+    .home-container03
+    .home-container04,
+  .home-main
+    .home-hero
+    .home-max-width
+    .home-hero1
+    .home-container03
+    .home-btn-group {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-container .home-cards-container div {
+    width: 45%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .section-container .home-cards-container div img {
+    object-position: center center;
+    object-fit: cover;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+  }
+
+  .home-full-width-banner {
+    display: block;
+  }
+  .home-text29 {
+    margin-top: 3rem;
+  }
+
+  .home-text30 {
+    width: 100%;
+  }
+
+  .home-left4 .home-btn {
+    margin-bottom: 3rem;
+  }
+
+  .home-image6 {
+    width: 100%;
+  }
+  .home-container08 {
+    display: block;
+  }
+
+  .home-container08 .blog-post-card-blog-post-card {
+    display: block;
+    max-width: 100%;
+  }
+
+  .home-footer1 {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    /* display: block; */
+  }
+  .home-links-container {
+    display: block;
+    margin-bottom: 4rem;
+  }
+}
